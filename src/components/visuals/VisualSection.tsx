@@ -33,7 +33,7 @@ function useMotionPreference() {
 
 // Lazy GSAP loader hook
 function useLazyGSAP() {
-  const [gsap, setGsap] = useState(null);
+  const [gsap, setGsap] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(false);
 
   const loadGSAP = async () => {
@@ -247,7 +247,7 @@ export default function VisualSection({ className = "" }: VisualSectionProps) {
       x: 0,
       transition: {
         duration: 0.8,
-        ease: [0.25, 0.1, 0.25, 1]
+        ease: [0.25, 0.1, 0.25, 1] as const
       }
     }
   };
@@ -259,7 +259,7 @@ export default function VisualSection({ className = "" }: VisualSectionProps) {
       x: 0,
       transition: {
         duration: 0.8,
-        ease: [0.25, 0.1, 0.25, 1]
+        ease: [0.25, 0.1, 0.25, 1] as const
       }
     }
   };

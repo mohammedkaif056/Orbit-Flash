@@ -61,7 +61,7 @@ const chains = [
 ] as const
 
 // Connector configurations - RainbowKit will handle connectors
-const connectors = []
+const connectors: any[] = []
 
 // Transport configuration with error handling
 const transports = {
@@ -83,7 +83,6 @@ export const wagmiConfig = createConfig({
   connectors,
   transports,
   ssr: true,
-  storage: typeof window !== 'undefined' ? window.localStorage : undefined,
   multiInjectedProviderDiscovery: true
 })
 

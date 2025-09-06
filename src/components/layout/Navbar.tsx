@@ -166,7 +166,6 @@ export default function Navbar() {
           backgroundColor: isScrolled ? "rgba(14, 15, 19, 0.8)" : "rgba(14, 15, 19, 0)",
         }}
         transition={{ duration: 0.3 }}
-        aria-expanded={isMobileMenuOpen}
       >
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">

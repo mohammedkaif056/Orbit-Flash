@@ -193,7 +193,6 @@ export const WagmiProviders = ({ children }: { children: ReactNode }) => {
         <WagmiProvider config={wagmiConfig}>
           <QueryClientProvider client={queryClient}>
             <RainbowKitProvider 
-              connectors={connectors}
               theme={rainbowKitTheme}
               modalSize="compact"
               initialChain={wagmiConfig.chains[0]}

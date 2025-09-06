@@ -121,7 +121,7 @@ export default function Testimonials({ className = "", autoAdvanceInterval = 600
 
   const transition = prefersReducedMotion 
     ? { duration: 0 } 
-    : { type: "tween", ease: "easeInOut", duration: 0.3 };
+    : { type: "tween" as const, ease: "easeInOut" as const, duration: 0.3 };
 
   if (testimonials.length === 0) {
     return (
