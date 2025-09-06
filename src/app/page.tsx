@@ -2,14 +2,14 @@
 
 import { Suspense } from "react";
 import { motion } from "framer-motion";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import Hero from "@/components/hero/Hero";
-import Features from "@/components/features/Features";
-import VisualSection from "@/components/visuals/VisualSection";
-import Testimonials from "@/components/testimonials/Testimonials";
-import FinalCTA from "@/components/cta/FinalCTA";
-import LoadingOverlay from "@/components/ui/LoadingOverlay";
+import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
+import Hero from "../components/hero/Hero";
+import Features from "../components/features/Features";
+import VisualSection from "../components/visuals/VisualSection";
+import Testimonials from "../components/testimonials/Testimonials";
+import FinalCTA from "../components/cta/FinalCTA";
+import LoadingOverlay from "../components/ui/LoadingOverlay";
 
 export default function HomePage() {
   return (
