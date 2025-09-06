@@ -159,7 +159,7 @@ export default function Hero({ className = "" }: HeroProps) {
       y: 0,
       transition: {
         duration: 0.6,
-        ease: [0.25, 0.4, 0.25, 1]
+        ease: [0.25, 0.4, 0.25, 1] as const
       }
     }
   };
@@ -167,7 +167,7 @@ export default function Hero({ className = "" }: HeroProps) {
   const buttonVariants = {
     hover: shouldReduceMotion ? {} : {
       scale: 1.05,
-      transition: { duration: 0.2, ease: "easeOut" }
+      transition: { duration: 0.2, ease: "easeOut" as const }
     },
     tap: shouldReduceMotion ? {} : {
       scale: 0.98,

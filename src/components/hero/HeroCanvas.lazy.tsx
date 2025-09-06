@@ -11,12 +11,12 @@ export default function HeroCanvas({ paused = false, prefersReducedMotion = fals
   const mountRef = useRef<HTMLDivElement>(null);
   const [error, setError] = useState<Error | null>(null);
   const [isVisible, setIsVisible] = useState(true);
-  const frameRef = useRef<number>();
-  const sceneRef = useRef<any>();
-  const rendererRef = useRef<any>();
-  const cameraRef = useRef<any>();
+  const frameRef = useRef<number | undefined>(undefined);
+  const sceneRef = useRef<any>(null);
+  const rendererRef = useRef<any>(null);
+  const cameraRef = useRef<any>(null);
   const orbitsRef = useRef<any[]>([]);
-  const clockRef = useRef<any>();
+  const clockRef = useRef<any>(null);
 
   // Check hardware capabilities
   const getPerformanceLevel = useCallback(() => {

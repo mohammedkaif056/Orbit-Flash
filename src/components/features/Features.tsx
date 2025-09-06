@@ -65,7 +65,7 @@ function FeatureCard({ feature, index, onClick, shouldReduceMotion }: FeatureCar
       transition: {
         duration: shouldReduceMotion ? 0.1 : 0.5,
         delay: shouldReduceMotion ? 0 : index * 0.1,
-        ease: [0.21, 1.11, 0.81, 0.99]
+        ease: [0.21, 1.11, 0.81, 0.99] as const
       }
     }
   };
@@ -75,7 +75,7 @@ function FeatureCard({ feature, index, onClick, shouldReduceMotion }: FeatureCar
     y: -4,
     transition: {
       duration: 0.2,
-      ease: "easeOut"
+      ease: "easeOut" as const
     }
   };
 
